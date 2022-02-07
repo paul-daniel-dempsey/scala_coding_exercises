@@ -25,9 +25,5 @@ class Exercise001 {
    * @param users A collection of users
    * @return
    */
-  def countLinuxUsers(users: Seq[User]): Int = {
-    // Add your code here
-    0
-  }
-
+  def countLinuxUsers(users: Seq[User]): Int = if (users == null) 0 else users.count(_.osType == "Linux")
 }
