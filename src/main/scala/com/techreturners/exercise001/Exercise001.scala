@@ -7,16 +7,8 @@ class Exercise001 {
   // we don't specify it in the code
   // https://docs.scala-lang.org/tour/basics.html
 
-  def capitalizeWord(word: String): String = {
+  def capitalizeWord(word: String): String = word.substring(0,1).toUpperCase + word.substring(1)
 
-    //split string into 2 parts, first character and then remaining characters
-    // Upper case the first character
-    val firstChar = word.substring(0,1)
-    val remainingChars = word.substring(1)
-
-    // Auto-Return
-    firstChar.toUpperCase + remainingChars
-  }
 
   def generateInitials(firstName: String, lastName: String) = ""
 
