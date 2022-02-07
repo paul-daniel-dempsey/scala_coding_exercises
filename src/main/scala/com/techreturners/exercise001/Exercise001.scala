@@ -16,7 +16,7 @@ class Exercise001 {
   def addVatRound(initialPrice: Double, interestRate: Double, decplc: Int) : Double = { val prec = math pow (10,decplc); (math rint (initialPrice * (1 + (interestRate / 100))) * prec) / prec}
   def addVatTruncate(initialPrice: Double, interestRate: Double, decplc: Int) : Double = { val prec = math pow (10,decplc); (math floor (initialPrice * (1 + (interestRate / 100))) * prec) / prec}
 
-  def reverse(sentence: String) : String = ""
+  def reverse(sentence: String) : String = sentence.reverse
 
   /**
    * Here we show using a Scala sequence which is a type of collection
