@@ -14,7 +14,7 @@ class Exercise003Test extends AnyFlatSpec {
     assert(exercise003.getIceCreamCode("Mango Sorbet") == 5)
   }
 
-  "All available flavours" should "be correctly returned" in {
+  "All available flavours" should "be correctly returned" ignore {
 
     val flavours = Array("Pistachio",
       "Raspberry Ripple",
