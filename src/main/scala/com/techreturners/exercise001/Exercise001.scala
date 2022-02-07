@@ -12,7 +12,9 @@ class Exercise001 {
 
   def generateInitials(firstName: String, lastName: String): String = firstName.substring(0,1).toUpperCase + "." + lastName.substring(0,1).toUpperCase
 
-  def addVat(initialPrice: Double, interestRate: Double) : Double = 0.0
+  def addVat(initialPrice: Double, interestRate: Double) : Double = addVatRound(initialPrice,interestRate,2)
+  def addVatRound(initialPrice: Double, interestRate: Double, decplc: Int) : Double = { val prec = math pow (10,decplc); (math rint (initialPrice * (1 + (interestRate / 100))) * prec) / prec}
+  def addVatTruncate(initialPrice: Double, interestRate: Double, decplc: Int) : Double = { val prec = math pow (10,decplc); (math floor (initialPrice * (1 + (interestRate / 100))) * prec) / prec}
 
   def reverse(sentence: String) : String = ""
 
