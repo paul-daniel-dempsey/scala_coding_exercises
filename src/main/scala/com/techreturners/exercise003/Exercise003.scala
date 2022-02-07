@@ -2,19 +2,14 @@ package com.techreturners.exercise003
 
 class Exercise003 {
 
-  def getIceCreamCode(iceCreamFlavour: String): Int = {
-    var flavours = Array("Pistachio",
+  val flavours: Array[String] = Array("Pistachio",
       "Raspberry Ripple",
       "Vanilla",
       "Mint Chocolate Chip",
       "Chocolate",
       "Mango Sorbet"
     )
-    flavours.indexOf(iceCreamFlavour)
-  }
 
-  def iceCreamFlavours: Array[String] = {
-    throw new UnsupportedOperationException("You can delete this line and add your code here.")
-  }
-
+  def getIceCreamCode(iceCreamFlavour: String): Int = flavours.indexOf(iceCreamFlavour)
+  def iceCreamFlavours: Array[String] = flavours
 }
